@@ -18,9 +18,9 @@ public:
             current = current->next;
         }
         
-        // Attach remaining nodes
+        
         current->next = list1 != nullptr ? list1 : list2;
         
-        return dummy->next;  // Return the head of the merged list
+        return dummy->next; 
     }
 };
